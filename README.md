@@ -42,9 +42,9 @@ By integrating a simple points system in the GitHub issues tab, it encourages co
 
 | Directory                                                                                         | Content                      |
 | --------------------------------------------------------------------------------------------------| ---------------------------- |
-| [frontend](https://github.com/vrushti-mody/Productive.ly/tree/main/frontend) | contains frontend components |
-| [backend](https://github.com/vrushti-mody/Productive.ly/tree/main/backend)   | contains backend api         |
-| [docs](https://github.com/vrushti-mody/Productive.ly/tree/main/docs)         | contains all docs (schemas, api routes, usage) |
+| [frontend](https://github.com/vrushti-mody/Productive.ly/tree/master/frontend) | contains frontend components |
+| [backend](https://github.com/vrushti-mody/Productive.ly/tree/master/backend)   | contains backend api         |
+| [docs](https://github.com/vrushti-mody/Productive.ly/tree/master/docs)         | contains all docs (schemas, api routes, usage) |
 
 ### Setup
 
