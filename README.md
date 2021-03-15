@@ -52,7 +52,7 @@ By integrating a simple points system in the GitHub issues tab, it encourages co
 
 ```
 $ git clone https://github.com/vrushti-mody/Productive.ly.git
-$ cd CodeOfDuty
+$ cd Productive.ly
 ```
 
 #### Frontend:
