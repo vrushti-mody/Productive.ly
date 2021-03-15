@@ -40,5 +40,7 @@ By integrating a simple points system in the GitHub issues tab, it encourages co
 [![PR's Welcome](https://img.shields.io/github/issues-pr-raw/vrushti-mody/Productive.ly)]()
 [![Contributors](https://img.shields.io/github/contributors/vrushti-mody/Productive.ly)]()
 
+Refer Contributing.md and make sure you follow the guidelines
+
 
 Made with 💕 by [Vrushti Mody](https://github.com/vrushti-mody) and [Rohan Poojari](https://github.com/RoRogers7) for the Woman Techies hackathon!
