@@ -41,7 +41,7 @@ function getSprintTasks(token, repo, milestone) {
       `https://api.github.com/repos/${repo}/issues?milestone=${milestone.number}`,
     )
     .set("Authorization", `token ${token}`)
-    .set("User-Agent", "CodeOfDuty")
+    .set("User-Agent", "Productively")
     .set("Accept", "application/vnd.github.v3+json")
     .then((result) => {
       const tasksList = result.body;
@@ -81,7 +81,7 @@ function createWebhook(token, repo, event, url) {
     .post(`https://api.github.com/repos/${repo}/hooks`)
     .set("Accept", "application/vnd.github.v3+json")
     .set("Authorization", `token ${token}`)
-    .set("User-Agent", "CodeOfDuty")
+    .set("User-Agent", "Productively")
     .send({
       name: "web",
       config: {
@@ -110,8 +110,8 @@ router.route("/create").post(async (req, res) => {
   }
 
   const tasks = await getSprintTasks(token, repo, milestone);
-  const bossMaxHealth = calculateBossHealth(tasks);
-  const contributors = getContributors(tasks);
+  const bossMaxHealth = await calculateBossHealth(tasks);
+  const contributors = await getContributors(tasks);
 
   // Create new Sprint
   const newSprint = new Sprint({
@@ -169,26 +169,26 @@ router.route("/create").post(async (req, res) => {
   newSprint
     .save()
     .then(() => console.log(`Sprint ${newSprint.name} added to the db`))
-    .catch((err) => res.status(500).send(err));
+    .catch((err) => console.log(err));
 
   // Attach webhooks to sprint
   const issueWebhook = await createWebhook(
     token,
     repo,
     "issues",
-    process.env.ISSUE_WEBHOOK_URL,
+    "https://smee.io/DPRAJgsLmMZ4x1i",
   );
   const prWebhook = await createWebhook(
     token,
     repo,
     "pull_request",
-    process.env.PR_WEBHOOK_URL,
+    "https://smee.io/9ZZIlWHgkwlkMdhK",
   );
   const milestoneWebhook = await createWebhook(
     token,
     repo,
     "milestone",
-    process.env.MILESTONE_WEBHOOK_URL,
+    "https://smee.io/CdTNBbuTf7UTClP",
   );
 
   if (
