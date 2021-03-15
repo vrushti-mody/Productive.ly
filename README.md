@@ -36,11 +36,74 @@ By integrating a simple points system in the GitHub issues tab, it encourages co
 - Git/Github APIs
 
 
+## Getting Started
+
+### File Structure
+
+| Directory                                                                                         | Content                      |
+| --------------------------------------------------------------------------------------------------| ---------------------------- |
+| [frontend](https://github.com/vrushti-mody/Productive.ly/tree/main/frontend) | contains frontend components |
+| [backend](https://github.com/vrushti-mody/Productive.ly/tree/main/backend)   | contains backend api         |
+| [docs](https://github.com/vrushti-mody/Productive.ly/tree/main/docs)         | contains all docs (schemas, api routes, usage) |
+
+### Setup
+
+- Fork and clone the repo
+
+```
+$ git clone https://github.com/vrushti-mody/Productive.ly.git
+$ cd CodeOfDuty
+```
+
+#### Frontend:
+- Install dependencies
+```
+$ cd frontend
+$ npm install
+```
+- Add the .env file
+```
+REACT_APP_REDIRECT_URI= http://localhost:3000/
+REACT_APP_OAUTH_CLIENT_ID= <YOUR CLIENT ID>
+REACT_APP_OAUTH_SCOPES=user public_repo admin:repo_hook
+```
+
+- Run the server and react app
+
+```
+$ npm run dev
+```
+
+#### Backend:
+- Install dependencies
+```
+$ cd backend
+$ npm install
+```
+
+- Add the .env file
+```
+ATLAS_URI=<YOUR MONGODB URI>
+OAUTH_CLIENT_ID=<YOUR GITHUB OAUTH CLIENTID>
+OAUTH_CLIENT_SECRET=<YOUR OAUTH SECRET>
+
+```
+
+- Run the server
+```
+$ npm start
+```
+
 ## Contribution Guidelines
 [![PR's Welcome](https://img.shields.io/github/issues-pr-raw/vrushti-mody/Productive.ly)]()
 [![Contributors](https://img.shields.io/github/contributors/vrushti-mody/Productive.ly)]()
 
-Refer Contributing.md and make sure you follow the guidelines
+If you have suggestions for how CodeOfDuty could be improved, or want to report a bug, open an issue! Contributions of all kinds are welcomed!
 
+For more, check out the [Contributing Guide](./CONTRIBUTING.md).
+
+## License
+
+[MIT](LICENSE) © 2020 MLH Fellowship
 
 Made with 💕 by [Vrushti Mody](https://github.com/vrushti-mody) and [Rohan Poojari](https://github.com/RoRogers7) for the Woman Techies hackathon!
