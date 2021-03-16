@@ -52,7 +52,7 @@ By integrating a simple points system in the GitHub issues tab, it encourages co
 
 ```
 $ git clone https://github.com/vrushti-mody/Productive.ly.git
-$ cd CodeOfDuty
+$ cd Productive.ly
 ```
 
 #### Frontend:
@@ -98,14 +98,13 @@ $ npm start
 [![PR's Welcome](https://img.shields.io/github/issues-pr-raw/vrushti-mody/Productive.ly)]()
 [![Contributors](https://img.shields.io/github/contributors/vrushti-mody/Productive.ly)]()
 
-If you have suggestions for how CodeOfDuty could be improved, or want to report a bug, open an issue! Contributions of all kinds are welcomed!
+If you have suggestions for how Productive.ly could be improved, or want to report a bug, open an issue! Contributions of all kinds are welcomed!
 
 For more, check out the [Contributing Guide](./CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) © 2020 MLH Fellowship
+[MIT](LICENSE) © 2020 WandaVision
 
 Made with 💕 by [Vrushti Mody](https://github.com/vrushti-mody) and [Rohan Poojari](https://github.com/RoRogers7) for the Woman Techies hackathon!
 
-Some change
